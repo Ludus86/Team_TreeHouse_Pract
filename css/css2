@@ -1,0 +1,190 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.main-nav {
+  margin-top: 5px;
+}
+.name {
+	font-size: 1.25em;
+  margin:0;
+}
+
+.name a,
+.main-nav a {
+	text-align: center;
+  display:block;
+  padding: 10px 15px;
+
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+.main-header {
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+.banner {
+	color: #fff;
+	background: #3acec2;
+  text-align:center;
+  padding-top: 50px;
+  margin-bottom:75px;
+  padding-bottom: 25px;
+}
+
+.col {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+  text-align: center;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+
+.headline {
+  margin-bottom: 0;
+
+}
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.name {
+  float:left;
+}
+
+.main-nav {
+  float: right;
+}
+
+.main-nav li {
+  float:left
+}
+
+.tagline {
+  font-size: 1.4em;
+}
+
+.feat-img {
+		width: 450px;
+    float: left;
+    margin-right: 25px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.secondary,
+.primary {
+  display:inline-block;
+  margin-left: -4px;
+  vertical-align: top;
+}
+
+.secondary {
+  width: 40%;
+}
+
+.primary {
+  width: 60%;
+}
+
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 960px) {
+
+.primary {
+  width: 50%;
+}
+
+.secondary {
+  width: 25%;
+}
+
+.tertiary{
+  width: 25%;
+}
+
+.col {
+  float:left;
+}
+.main-footer{
+  clear: both;
+}
+}
